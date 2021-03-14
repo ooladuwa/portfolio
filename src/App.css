@@ -63,7 +63,7 @@ a {
   font-family: "PT Sans", sans-serif;
 }
 a:hover {
-  color: #4d3206;
+  color: #fcb131;
 }
 i {
   font-size: 5rem;
@@ -84,7 +84,7 @@ i {
 }
 
 .seedlings {
-  background-image: url("https://i.ibb.co/n0jnPH1/seedlings.png");
+  /* background-image: url("https://i.ibb.co/n0jnPH1/seedlings.png"); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100%;
