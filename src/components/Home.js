@@ -3,36 +3,35 @@ import { Link, Switch, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import "./home.css";
 
-const Header = () => {
+const Home = () => {
   return (
-    <div className="header-links">
+    <div>
       <header className="home">
-        <nav>
-          <div className="links">
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-          </div>
+        {/* <div className="links"> */}
+        <nav className="navigation links">
+          <Link to="/">Home</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
-      </header>
+        {/* </div> */}
 
-      <Switch>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/projects">
-          <Projects />
-        </Route>
-        <Route exact path="/"></Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/projects">
+            <Projects />
+          </Route>
+          <Route exact path="/"></Route>
+        </Switch>
+      </header>
     </div>
   );
 };
 
-export default Header;
+export default Home;

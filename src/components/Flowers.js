@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sunshine = () => {
+const Flowers = () => {
   return (
     <div>
       <img
@@ -39,4 +39,4 @@ const Sunshine = () => {
   );
 };
 
-export default Sunshine;
+export default Flowers;
